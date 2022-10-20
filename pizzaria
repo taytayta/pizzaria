@@ -1,0 +1,66 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 20/10/2022
+Var
+// Seção de Declarações das variáveis 
+pizza:real
+valor:real
+bebida:real
+quantidade:real
+valorpizza:real
+totpedido:real
+s, b, p:caractere
+n:caractere
+continuar:caractere
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("pizzaria regattieri")
+escreval ("fazer pedido")
+escreval("opcoes de pizza")
+escreval("digite 1 para queijo,digite 2 para calabresa")
+escreval (" digite 3 para peperoni,digite 4 para frango")
+leia (pizza)
+escreva ("qual o valor da pizza ? R$")
+leia (valor)
+escreva("quantidade")
+leia (quantidade)
+valor <- valor*quantidade //soma total do valor da pizza recebe o preço unitario vezes a quantidade desejada
+   totpedido <- totpedido + valorpizza // total de pedido recebe ele mesmo "0" mais a soma total do valor de um item da lista
+   escreval("deseja adcionar outro produto? s/n ")
+   leia (s)
+   se s = "s" entao
+   fimse
+   escreval ("deseja pizza ou bebida? p/b")
+   leia (p)
+   se p = "p" entao
+   escreval("digite 1 para queijo,digite 2 para calabresa")
+   escreval (" digite 3 para peperoni,digite 4 para frango")
+   leia(pizza)
+   caso pizza = 1
+   totpedido <- totpedido + 14
+   caso pizza = 2
+   totpedido <- totpedido + 16
+   caso pizza = 3
+   totpedido <- totpedido + 18
+   caso pizza = 4
+   totpedido <- totpedido + 20
+   se bebida = "b" entao
+   escreval(" digite 1 para suco de maracuja,digite 2 para coca,digite 3 para limonada,digite 4 para fanta")
+   leia(bebida)
+   caso bebida = 1
+   totpedido <- totpedido + 3
+    caso bebida = 2
+   totpedido <- totpedido + 4
+    caso bebida = 3
+   totpedido <- totpedido + 5
+    caso bebida = 4
+    totpedido <- totpedido + 6
+    se n = "n" entao
+   fimse
+escreval("O valor total de pedidos é -> R$",totpedido)
+fimalgoritmo
